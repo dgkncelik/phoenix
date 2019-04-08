@@ -1,8 +1,10 @@
 <template>
   <li @click="triggerUpload">
-    <oc-icon name="cloud_upload"></oc-icon>
-    <span v-translate>Upload</span>
-    <input id="fileUploadInput" type="file" name="file" @change="onChangeInputFile" multiple ref="input" />
+    <div class="uk-flex uk-flex-middle">
+      <oc-icon name="cloud_upload" class="uk-margin-small-right" />
+      <span v-translate>Upload</span>
+      <input id="fileUploadInput" type="file" name="file" @change="onChangeInputFile" multiple ref="input" />
+    </div>
   </li>
 </template>
 
